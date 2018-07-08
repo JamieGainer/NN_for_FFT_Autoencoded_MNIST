@@ -7,5 +7,7 @@ This repo contains code and data from my explorations of
 of images.
 3.  Mixing features from the autoencoded images and the autoencoded FFT images.
 
+In these explorations, I am using the MNIST data set for simplicity and for ease of comparison with other results.
+
 The only non-standard dependency is on the module autoencoder_fft_mnist/fft_autoencoder.py in my Linear_Autoencoder_and_FFT_for_MNIST github repo.
 
