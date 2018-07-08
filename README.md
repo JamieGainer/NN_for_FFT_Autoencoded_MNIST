@@ -11,3 +11,12 @@ In these explorations, I am using the MNIST data set for simplicity and for ease
 
 The only non-standard dependency is on the module autoencoder_fft_mnist/fft_autoencoder.py in my Linear_Autoencoder_and_FFT_for_MNIST github repo.
 
+## Preliminary Conclusions
+
+There are a lot of things left to try (deeper neural networks, more than 20 features, evaluating accuracy on the test set, etc.) but initial work suggests that training in feature spaces with both autoencoded image features and autoencoded FFT image features is not as effective in training either in spaces with only autoencoded image features or in spaces with
+only autoencded FFT image features (see plots).
+
+A potential explanation is that the FFT and non-FFT autotencoded feature spaces overlap strongly, in which case the
+effective dimensionality of feature spaces with both features is lessened.
+
+I will try to verify this explanation directly.  I note that mixing FFT and non-FFT features might still have use in preventing overfitting, even if it reduces the apparent effectiveness of training, as measured by, e.g., accuracy on the training set.
